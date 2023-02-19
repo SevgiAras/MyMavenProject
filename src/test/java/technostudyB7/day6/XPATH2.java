@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class XPATH2 {
+
     public static void main(String[] args) {
+
         /*
         1- Go to https://www.saucedemo.com/
 2- login with valid credentials

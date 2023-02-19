@@ -17,6 +17,18 @@ public class ActionDragAndDrop extends UtilityClass{
         Actions actions =new Actions(driver);
         Action dragAndDropWashington =actions.dragAndDrop(washington,unitedStates).build();
         dragAndDropWashington.perform();
+        WebElement denmark =driver.findElement(By.id("box104"));
+        WebElement  copenhagen =driver.findElement(By.id("box4"));
+        Action dropAndDropCopenhagen =actions.dragAndDrop(copenhagen,denmark).build();
+        dropAndDropCopenhagen.perform();
+        WebElement italy =driver.findElement(By.id("box6"));
+        WebElement Rome = driver.findElement(By.id("box106"));
+        Action dropAndDropRome =actions.dragAndDrop(Rome,italy).build();
+        dropAndDropRome.perform();
+        WebElement spain =driver.findElement(By.xpath("//div[text()='Spain']"));
+        WebElement madrid =driver.findElement(By.xpath("//div[text()='Madrid']"));
+        Action dropAndDropMadrid=actions.dragAndDrop(madrid,spain).build();
+        dropAndDropMadrid.perform();
 
     }
 }

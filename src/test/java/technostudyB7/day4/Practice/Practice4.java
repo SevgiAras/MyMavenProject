@@ -35,7 +35,7 @@ dropAccountButton.click();
  WebElement emailButton =driver.findElement(By.xpath("//input[@name='email']"));
 emailButton.sendKeys("sena123@gmail.com");
 WebElement passwordButton =driver.findElement(By.xpath("//input[@name='password']"));
-passwordButton.sendKeys("1234567");
+passwordButton.sendKeys("123456");
 WebElement accountTypes =driver.findElement(By.xpath("//label[text()='Account Type']"));
 accountTypes.click();
 
